@@ -11,7 +11,7 @@ import { Link } from 'gatsby'
   border: none;
   min-width: 100px;
   cursor: pointer;
-  text-docoration: none;
+  text-decoration: none;
   transition: 0.3s !important;
   border-radius: ${({ round }) => (round ? '50px' : 'none')};
 

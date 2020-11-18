@@ -19,7 +19,7 @@ const Header = () => {
         ))}
       </NavMenu>
       <NavBtn>
-        <Button>Book a Flight</Button>
+        <Button primary='true' round='true' to='/trips'>Book a Flight</Button>
       </NavBtn>
     </Nav>
   )
@@ -30,10 +30,10 @@ const Header = () => {
 export default Header
 
 const Nav = styled.nav`
-  background:red;
+  background:transparent;
   height: 80px;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px)/2);
   z-index: 100;
   position: relative;
@@ -65,7 +65,7 @@ const Bars = styled(FaBars)`
 const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 900px;
+  margin-right: -48px;
   
 
   @media screen and (max-width: 768px) {
